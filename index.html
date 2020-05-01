@@ -10,45 +10,60 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle="popover"]').popover({
-        placement: 'bottom'
-      });
-    });
-  </script>
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-  <header>
-    <!--LOGO-->
-    <a href="">
-      <picture>
-        <img src="" alt="">
-      </picture>
-    </a>
-    <!--BARRA DE BUSCA-->
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-        aria-describedby="button-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-          <img src="" alt="">
-        </button>
+  <header style="background-color: #E60014" class="container-fluid">
+    <div class="row">
+      <!--MENU-->
+      <div class="col-1">
+        <div class="dropdown">
+          <button style="color: white;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--BOTÃO DE LOGIN COM POPOVER-->
-    <button type="button" class="btn" data-toggle="popover" title="Popover title" data-content="Faça cadastro"><i
-        class="fa fa-3x fa-user"></i></button>
-    <!--FAVORITOS FALTA FOTO-->
-    <a href="">
-      <img src="" alt="">
-    </a>
-    <!--CARRINHO FALTA FOTO-->
-    <button type="button" class="btn btn-primary">
-      <img src="" alt=""> <span class="badge badge-light">0</span>
-    </button>
-    <!--<nav>
+      <!--LOGO-->
+      <div class="col-1 mt-3">
+        <a href="https://www.americanas.com.br/" target="_blank" class>
+          <picture>
+            <img src="img/logo-americanas.png" alt="Logo das Lojas Americanas">
+          </picture>
+        </a>
+      </div>
+      <!--BARRA DE BUSCA-->
+      <div class="col-6">
+        <div class="input-group mt-3 mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+              <i style="color: white;" class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--MENU LOGIN COM POPOVER-->
+      <div class="col-2">
+        <button type="button" class="btn" data-toggle="popover" title="Popover title" data-content="Faça cadastro"><i
+            class="fa fa-3x fa-user"></i></button>
+      </div>
+      <!--FAVORITOS FALTA FOTO-->
+      <div class="col-2">
+        <a href="">
+          <img src="" alt="">
+        </a>
+        <!--CARRINHO FALTA FOTO-->
+        <button type="button" class="btn btn-primary">
+          <img src="" alt=""> <span class="badge badge-light">0</span>
+          </butto>
+      </div>
+      <!--<nav>
       <ul>
         <li>Home</li>
         <li>Sobre</li>
